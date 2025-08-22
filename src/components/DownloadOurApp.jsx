@@ -60,7 +60,7 @@ const DownloadOurApp = () => {
             </div>
             {/* Floating mockup image */}
             <motion.img
-              src="src/assets/app-mockup.png" // replace with your image path
+              src="/app-mockup.png" // replace with your image path
               alt="App Mockup"
               className="rounded-b-xl"
               animate={{ y: [0, -5, 0] }}

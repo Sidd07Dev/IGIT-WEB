@@ -14,12 +14,11 @@ const PlacedStudents = () => {
     const fetchStudents = async () => {
       try {
         const res = await axios.get(
-          'http://13.202.54.217/api/v1/alumni/',
+          'https://igitmcabackend.onrender.com/api/v1/alumni/',
           {
             headers: {
               Authorization:
-                'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2U1MjhkMGNjNmJlNTFjNGQ2MWUzYzUiLCJlbWFpbCI6InNpZGQwN2RldkBnbWFpbC5jb20iLCJmdWxsbmFtZSI6IlNpZGhhbnRhIFByYWRoYW4iLCJyb2xlIjoiY2RjIiwiaWF0IjoxNzUyMjY1MDY1LCJleHAiOjE3OTU0NjUwNjV9.ACyhhy7kdhqr2998saakZeUdoH1EKZnEKPsHx7oqbc0',
-            },
+                'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2N2U1MjhkMGNjNmJlNTFjNGQ2MWUzYzUiLCJlbWFpbCI6InNpZGQwN2RldkBnbWFpbC5jb20iLCJmdWxsbmFtZSI6IlNpZGhhbnRhIFByYWRoYW4iLCJyb2xlIjoiY2RjIiwiaWF0IjoxNzU1ODQxMDg5LCJleHAiOjE3ODczNzcwODl9.ytWLiRAn0FX-xDBllwouWfD7h8RWnkIW7WrzS0KLA8A'      },
           }
         );
         if (res.data?.data?.data) {

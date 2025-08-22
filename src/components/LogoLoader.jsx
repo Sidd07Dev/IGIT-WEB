@@ -8,7 +8,7 @@ const LogoLoader = () => {
       <div className="relative">
         {/* Spinning logo */}
         <img
-          src="../public/icon.png"
+          src="/icon.png"
           alt="Loading..."
           className="w-24 h-24  duration-[3000ms] ease-linear drop-shadow-xl brightness-110"
         />

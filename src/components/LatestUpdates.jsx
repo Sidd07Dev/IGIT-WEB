@@ -32,7 +32,7 @@ export default function NoticeBoard() {
     const fetchNotices = async () => {
       try {
         setLoading(true);
-        const res = await fetch("http://13.202.54.217/api/v1/notice/");
+        const res = await fetch("https://igitmcabackend.onrender.com/api/v1/notice/");
         if (!res.ok) throw new Error("Failed to fetch notices");
         const data = await res.json();
         setNotices(data.data);
